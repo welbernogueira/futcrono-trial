@@ -302,7 +302,7 @@ export const Home: React.FC<{}> = () => {
                             >
                                 <div className="position-relative">
                                     <span className="display-6 text-semibold d-block lh-1 text-secondary">
-                                        Souza
+                                        Sousa
                                     </span>
                                     <span className="text-secondary fs-5">E. C.</span>
                                     <h4 className="display-4 m-0">
