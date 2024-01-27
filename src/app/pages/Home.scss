@@ -1,0 +1,104 @@
+.-pt-h-navbar {
+    padding-top: 66px;
+}
+
+.vh-50 {
+    min-height: 48vh !important;
+}
+
+.navbar-brand .btn-controle {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.bg-primary {
+    background-image: url('../assets/img/serra.jpeg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(9deg,
+                var(--bs-black) 15%,
+                var(--bs-primary) 75%,
+                var(--bs-black) 100%);
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        opacity: .4;
+    }
+}
+
+.card.bg-secondary {
+    background-image: url('../assets/img/souza.jpeg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(9deg,
+                var(--bs-black) 15%,
+                var(--bs-secondary) 75%,
+                var(--bs-black) 100%);
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        opacity: .4;
+    }
+}
+
+.btn.btn-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+    margin: 1rem 0;
+}
+
+.btn.btn-action::before {
+    content: "";
+    position: absolute;
+    height: 17.5rem;
+    width: 17.5rem;
+    border-radius: 50%;
+    background-color: var(--bs-black);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 16px 16px 0px;
+}
+
+@keyframes pulse-animation-primary {
+    0% {
+        box-shadow: 0 0 0 0 var(--bs-primary);
+    }
+
+    100% {
+        box-shadow: 0 0 0 2rem transparent;
+    }
+}
+
+@keyframes pulse-animation-secondary {
+    0% {
+        box-shadow: 0 0 0 0 var(--bs-secondary);
+    }
+
+    100% {
+        box-shadow: 0 0 0 2rem transparent;
+    }
+}
+
+.pulse.bg-primary {
+    animation: pulse-animation-primary 1s infinite;
+}
+
+.pulse.bg-secondary {
+    animation: pulse-animation-secondary 1s infinite;
+}

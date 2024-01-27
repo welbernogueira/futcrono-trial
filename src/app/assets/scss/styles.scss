@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Genos", Courier, monospace;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+$dark: #1a1d20 !default;
+
+$body-color: #ffffff !default;
+$body-bg: $dark !default;
+
+$primary: #1e933a !default;
+//$secondary: red !default;
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@import "~bootstrap/scss/bootstrap.scss";
