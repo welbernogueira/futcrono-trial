@@ -302,9 +302,9 @@ export const Home: React.FC<{}> = () => {
                             >
                                 <div className="position-relative">
                                     <span className="display-6 text-semibold d-block lh-1 text-secondary">
-                                        Sousa
+                                        Time
                                     </span>
-                                    <span className="text-secondary fs-5">E. C.</span>
+                                    <span className="text-secondary fs-5">Adversário</span>
                                     <h4 className="display-4 m-0">
                                         <TimerDisplay time={controle.clubeB.possessionTime} />
                                     </h4>
